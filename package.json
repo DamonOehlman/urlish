@@ -1,6 +1,6 @@
 {
   "name": "urlish",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A string parser that determines if something is url-like",
   "main": "index.js",
   "scripts": {
