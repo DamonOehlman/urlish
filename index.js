@@ -1,7 +1,7 @@
 /* jshint node: true */
 'use strict';
 
-var reUrl = /^(\w+)\:\/\/([^\/\:]*)(\:\d+)?(\/.*)$/;
+var reUrl = /^(\w+)\:\/\/([^\/\:]*)(\:\d+)?(\/?.*)$/;
 
 /**
   # urlish
@@ -52,7 +52,7 @@ module.exports = function(input, opts) {
   return {
     scheme: match[1],
     hostname: match[2],
-    port: parseInt(match[3], 10) || 80,
+    port: (match[3] && parseInt(match[3].slice(1), 10)) || 80,
     path: match[4]
   };
 };
