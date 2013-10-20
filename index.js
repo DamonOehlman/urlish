@@ -1,6 +1,8 @@
 /* jshint node: true */
 'use strict';
 
+var reUrl = /^(\w+)\:\/\/([^\/\:]*)(\:\d+)?(\/.*)$/;
+
 /**
   # urlish
 
@@ -39,5 +41,18 @@
 
 **/
 module.exports = function(input, opts) {
+  var match = reUrl.exec(input);
 
+  // if we didn't get a match, return false
+  if (! match) {
+    return false;
+  }
+
+  // otherwise, split the url into the component parts
+  return {
+    scheme: match[1],
+    hostname: match[2],
+    port: parseInt(match[3], 10) || 80,
+    path: match[4]
+  };
 };
