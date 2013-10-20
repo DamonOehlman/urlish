@@ -12,7 +12,7 @@ are used.
 
 [![NPM](https://nodei.co/npm/urlish.png)](https://nodei.co/npm/urlish/)
 
-
+[![Build Status](https://drone.io/DamonOehlman/urlish/status.png)](https://drone.io/DamonOehlman/urlish/latest)
 
 ## So what is URLish?
 
