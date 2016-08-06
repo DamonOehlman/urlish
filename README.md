@@ -1,3 +1,4 @@
+
 # urlish
 
 This is a simple module that parses an input string to determine if it
@@ -12,7 +13,7 @@ are used.
 
 [![NPM](https://nodei.co/npm/urlish.png)](https://nodei.co/npm/urlish/)
 
-[![Build Status](https://drone.io/bitbucket.org/DamonOehlman/urlish/status.png)](https://drone.io/bitbucket.org/DamonOehlman/urlish/latest)
+[![Build Status](https://api.travis-ci.org/DamonOehlman/urlish.svg?branch=master)](https://travis-ci.org/DamonOehlman/urlish) [![bitHound Score](https://www.bithound.io/bitbucket/DamonOehlman/urlish/badges/score.svg)](https://www.bithound.io/bitbucket/DamonOehlman/urlish) 
 
 ## So what is URLish?
 
@@ -26,25 +27,11 @@ following format:
 At this stage, things like usernames and passwords are not looked at
 and no querystring or hash parsing is attempted either.
 
-## Example Usage
-
-The following demonstrates the usage of `urlish` within the context
-of the `getit` module:
-
-```
-ERROR: could not find: 
-```
-
-In the case above, you will notice that the hostname component is not
-automatically lowercased as it is using the `url.parse` function. This is
-useful when working with getit as we are using the host component to map
-to a part of a real url that is case-sensitive.
-
 ## License(s)
 
 ### MIT
 
-Copyright (c) 2013 Damon Oehlman <damon.oehlman@gmail.com>
+Copyright (c) 2016 Damon Oehlman <damon.oehlman@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

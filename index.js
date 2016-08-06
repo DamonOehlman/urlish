@@ -27,18 +27,6 @@ var reUrl = /^(\w+)\:\/\/([^\/\:]*)(\:\d+)?(\/?.*)$/;
   At this stage, things like usernames and passwords are not looked at
   and no querystring or hash parsing is attempted either.
 
-  ## Example Usage
-
-  The following demonstrates the usage of `urlish` within the context
-  of the `getit` module:
-
-  <<< examples/gist.js
-
-  In the case above, you will notice that the hostname component is not
-  automatically lowercased as it is using the `url.parse` function. This is
-  useful when working with getit as we are using the host component to map
-  to a part of a real url that is case-sensitive.
-
 **/
 module.exports = function(input, opts) {
   var match = reUrl.exec(input);
